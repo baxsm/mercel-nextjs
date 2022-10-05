@@ -30,10 +30,10 @@ function Post({data}) {
 
     return (
         <div className="flex gap-5">
-            <div className="image flex flex-col justify-start">
+            <div className="images flex flex-col justify-start">
                 <Link href={`/posts/${id}`}>
                     <a>
-                        <img className="rounded" src={img || "/"} width={300} height={200} />
+                        <img className="rounded w-[300px] h-[200px]" src={img || "/"}/>
                     </a>
                 </Link>
             </div>

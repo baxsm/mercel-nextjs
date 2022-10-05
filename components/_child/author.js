@@ -8,7 +8,7 @@ export default function author({ data }) {
 
     return (
         <div className="author flex py-5">
-            <img src={img || "/"} className="rounded-full" width={60} height={60} />
+            <img src={img || "/"} className="rounded-full w-[60px] h-[60px]"/>
             <div className="flex flex-col justify-center px-4">
                 <Link href={"/"}>
                     <a className="text-md font-bold text-gray-800 hover:text-gray-600">

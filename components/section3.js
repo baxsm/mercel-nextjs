@@ -44,7 +44,7 @@ function Popular({ data }) {
             <div className="images">
                 <Link href={`/posts/${id}`}>
                     <a>
-                        <img src={img || "/"} width={600} height={400} />
+                        <img src={img || "/"} className="w-[600px] h-[400px]"/>
                     </a>
                 </Link>
             </div>

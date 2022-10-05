@@ -35,7 +35,7 @@ function Latest({ data }) {
                 <div className="images">
                     <Link href={`/posts/${id}`}>
                         <a>
-                            <img className="rounded" src={img || "/"} width={500} height={350} />
+                            <img className="rounded w-[500px] h-[350px]" src={img || "/"}/>
                         </a>
                     </Link>
                 </div>

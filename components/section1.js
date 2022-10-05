@@ -57,7 +57,7 @@ function Trending({ data }) {
                 <div className="image">
                     <Link href={`/posts/${id}`}>
                         <a>
-                            <img src={img || "/"} width={600} height={600} />
+                            <img src={img || "/"} className="w-[600px] h-[600px]"/>
                         </a>
                     </Link>
                 </div>

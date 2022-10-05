@@ -36,7 +36,7 @@ function Article({ id, title, subtitle, category, img, published, author, descri
                     <h1 className="font-bold text-4xl text-center pb-5">{title || "Title"}</h1>
                     <p className="text-gray-500 text-xl text-center">{subtitle || "Subtitle"}</p>
                     <div className="py-10">
-                        <Image src={img} width={900} height={600}></Image>
+                        <img src={img} className="w-[900px] h-[600px]"></img>
                     </div>
                     <div className="content text-gray-600 text-lg flex flex-col gap-4">
                         {description}

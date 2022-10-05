@@ -66,7 +66,7 @@ function Categories({ data }) {
                 <div className="image flex flex-col justify-start">
                     <Link href={`/posts/${id}`}>
                         <a>
-                            <img className="rounded" src={img} width={300} height={250} />
+                            <img className="rounded w-[300px] h-[250px]" src={img}/>
                         </a>
                     </Link>
                 </div>
