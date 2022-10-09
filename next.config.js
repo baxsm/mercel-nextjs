@@ -5,6 +5,7 @@ const nextConfig = {
   images: {
     domains: ['miro.medium.com'],
   },
+  staticPageGenerationTimeout: 100,
 }
 
 module.exports = nextConfig
