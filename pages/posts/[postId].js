@@ -12,7 +12,7 @@ import { SWRConfig } from "swr"
 export default function Page({ fallback }) {
     const router = useRouter()
     const { postId } = router.query;
-    const { data, isLoading, isError } = fetcher(`https://mercel-nextjs.vercel.app/api/posts/${postId}`)
+    const { data, isLoading, isError } = fetcher(`/api/posts/${postId}`)
 
     if (isLoading) return <Spinner></Spinner>
     if (isError) return <Error></Error>
@@ -54,7 +54,7 @@ export async function getStaticProps({ params }) {
     return {
         props: {
             fallback: {
-                'https://mercel-nextjs.vercel.app/api/posts': posts
+                '/api/posts': posts
             }
         }
     }
